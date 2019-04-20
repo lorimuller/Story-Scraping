@@ -1,0 +1,32 @@
+.jumbotron {
+  background: url("/public/img/blur-blurry-close-up-347139.jpg") no-repeat center center;
+  background-color: blue;
+}
+
+.display-4 {
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.lead {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.btn-primary {
+  background-color: #345c43;
+  color: white !important;
+}
+
+.note-item-list {
+  padding: 5px;
+}
+
+
+body {
+    background-image: url("/public/img/apple-background-connection-399161.jpg");
+   background-color: pink;
+}
+
+
+
