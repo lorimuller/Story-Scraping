@@ -1,6 +1,11 @@
 .jumbotron {
-  background: url("/public/img/blur-blurry-close-up-347139.jpg") no-repeat center center;
-  background-color: blue;
+  background: url("/img/advertisements-batch-blur-518543.jpg") no-repeat center center;
+  color: white;
+  font-weight: bolder;
+}
+
+.container {
+  color: #264d73;
 }
 
 .display-4 {
@@ -13,9 +18,20 @@
   font-weight: bolder;
 }
 
+.card-body {
+  /* background-color: #ecf2f9; */
+  /* background-color: white; */
+  border: none;
+  color: #264d73;
+  /* opacity: .7; */
+  /* background: url("/public/img/advertisements-batch-blur-518543.jpg"); */
+}
+
 .btn-primary {
-  background-color: #345c43;
-  color: white !important;
+  background-color: #264d73;
+  color: #ecf2f9 !important;
+  /* color: white !important; */
+  border: none;
 }
 
 .note-item-list {
@@ -24,9 +40,11 @@
 
 
 body {
-    background-image: url("/public/img/apple-background-connection-399161.jpg");
-   background-color: pink;
+  background-image: url("/img/beverage-blank-break-997719.jpg");
+  
 }
+
+
 
 
 

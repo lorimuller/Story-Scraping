@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">The Onion News</a>
+  <a class="navbar-brand" href="#">The ONION</a>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="/">Home</a>
@@ -9,18 +9,18 @@
   </div>
 </nav>
 
-<div class="jumbotron jumbotron-fluid text-center bg-dark">
-  <h1 class="display-4">The Onion News</h1>
-  <p class="lead">Get the latest from The Onion</p>
+<div class="jumbotron jumbotron-fluid text-center">
+  <h1 class="display-4">The ONION</h1>
+  <p class="lead">Get the latest, satirical, news from The ONION</p>
 </div>
 
 <div class="container article-container">
   <h3>Articles</h3>
   {{#each articles}}
-    <div class="card text-white bg-dark mb-3">
+    <div class="card-transparent mb-3">
       <div class="card-body">
         <h5 class="card-title">{{title}}</h5>
-        <a href="{{link}}" class="card-link" target="_blank">View article on The Onion</a>
+        <a href="{{link}}" class="card-link" target="_blank">View article on The ONION</a>
         <p class="card-text">{{intro}}...</p>
         <a data-articleId="{{_id}}" class="btn btn-primary save-btn">Save article</a>
       </div>
