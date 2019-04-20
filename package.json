@@ -1,0 +1,32 @@
+{
+  "name": "story-scraping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cheerio": "^1.0.0-rc.3",
+    "express-handlebars": "^3.0.2",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "mongoose": "^5.5.2",
+    "request": "^2.88.0",
+    "handlebars": "^4.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lorimuller/Story-Scraping.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lorimuller/Story-Scraping/issues"
+  },
+  "homepage": "https://github.com/lorimuller/Story-Scraping#readme"
+}
