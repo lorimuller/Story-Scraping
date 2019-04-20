@@ -4,7 +4,7 @@
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="/">Home</a>
       <a class="nav-item nav-link active" href="/saved">Saved articles</a>
-      <a class="btn btn-light scrape-new">Get new articles</a>
+      <a class="btn btn-light scrape-new" href="/scrape">Get new articles</a>
     </div>
   </div>
 </nav>
@@ -20,7 +20,7 @@
     <div class="card-transparent mb-3">
       <div class="card-body">
         <h5 class="card-title">{{title}}</h5>
-        <a href="{{link}}" class="card-link" target="_blank">View article on The ONION</a>
+        <a href="{{link}}" class="card-link" target="_blank">View article on The ONION</a><br/>
         <p class="card-text">{{intro}}...</p>
         <a data-articleId="{{_id}}" class="btn btn-primary save-btn">Save article</a>
       </div>

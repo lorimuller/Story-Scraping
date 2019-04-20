@@ -75,15 +75,19 @@ app.get("/", function (req, res) {
 
 // use cheerio to scrape stories from The Onion and store them
 app.get("/scrape", function (req, res) {
+    console.log("SCRAPING");
     request("https://www.theonion.com/", function (error, response, html) {
         // Load the html body from request into cheerio
         var $ = cheerio.load(html);
-        $(".headline").each(function (i, element) {
+        $("article").each(function (i, element) {
 
             // trim() removes whitespace because the items return \n and \t before and after the text
-            var title = $(element).find("a.post-block__title__link").text().trim();
-            var link = $(element).find("a.post-block__title__link").attr("href");
-            var intro = $(element).children(".post-block__content").text().trim();
+            var title = $(element).find("h1.headline").text().trim();
+            var link = $(element).find("a.js_entry-link").attr("href");
+            var intro = $(element).find("div.excerpt p").text().trim();
+            console.log('title', title);
+            console.log('link', link);
+            console.log('intro', intro);
 
             // if these are present in the scraped data, create an article in the database collection
             if (title && link && intro) {
