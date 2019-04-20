@@ -25,8 +25,26 @@ app.use(express.static("public"));
 // use promises with Mongo and connect to the database
 var databaseUrl = "news";
 mongoose.Promise = Promise;
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/news";
-mongoose.connect(MONGODB_URI);
+// var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/news";
+// mongoose.connect(MONGODB_URI);
+
+var databaseUri = 'mongodb://localhost/news';
+
+if (process.env.MONGODB_URI){
+    mongoose.connect(process.env.MONGODB_URI);
+} else {
+    mongoose.connect(databaseUri);
+}
+
+var db = mongoose.connection;
+
+db.on('error', function(err) {
+    console.log("mongoose error: ", err);
+});
+
+db.once('open', function() {
+    console.log('mongoose connection successful.');
+});
 
 // use handlebars
 app.engine("handlebars", exphbs({
